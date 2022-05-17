@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    box-shadow: 1px 1px 8px 15px #c8c8c8;
+    border-radius: 5px;
+    margin: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-pic{
+    background-image: url("https://media.istockphoto.com/photos/abstract-blur-soft-focus-blue-color-interior-of-modern-cleaning-picture-id1156772856?k=20&m=1156772856&s=612x612&w=0&h=YatSXcdYafrpPYGV2lvJ7z72Eq0AeiPPxypqz3QomaY=");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.white-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.white-circle img {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-info{
+    text-align: center;
+    padding: 20px;
+}
+
+.card-info h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card-info p{
+    font-size: 18px;
+}
+
+.card-icons{
+    display: flex;
+   justify-content: space-around;
+   padding: 0 50px;
+   margin-top: 40px;
+}
+
+.icons{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.check{
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
